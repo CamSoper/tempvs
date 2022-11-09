@@ -1,4 +1,6 @@
-﻿int iteration=0;
+﻿using System.Diagnostics;
+
+int iteration=0;
 
 while(true)
 {
@@ -10,7 +12,8 @@ while(true)
         Console.WriteLine("You did not enter a name. Please try again.");
         continue;
     }
+    Debug.WriteLine($"Name: {name}, Iteration: {iteration}");
     Console.WriteLine($"Hello, {name}! This is iteration {iteration} of the loop.");
-    Console.WriteLine(Environment.NewLine);
+    Console.WriteLine();
 }
 
